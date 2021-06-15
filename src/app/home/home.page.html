@@ -1,20 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Check In
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- <h1>Click Here To Scan QR</h1> -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button expand="full" color="primary" (click)="scanCode()">
+   Scan Qr
+  </ion-button>
+<!-- <ion-input [(ngModel)]="userInput.name"></ion-input>
+<ion-button (click)="try()">success</ion-button> -->
+<!-- 
+
+  <h1>Enter Value to Create QR code</h1>
+  <ion-input placeholder="input email" [(ngModel)]="userInput.email"></ion-input>
+  <ion-input placeholder="input name" [(ngModel)]="userInput.name"></ion-input>
+  <ion-input placeholder="input department" [(ngModel)]="userInput.department"></ion-input>
+
+  <ion-button color="success" (click)="encodedText()">
+    Create QR
+  </ion-button>
+
+  <ion-grid>
+    <ion-row class="ion-align-self-center">
+      <ion-col size="6">
+        <ion-button (click)="takePhoto(1)">Show Camera</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div *ngIf="base64Image">
+    <img [src]="base64Image">
+    <ion-button (click)="upload()">Upload to Firebase!</ion-button>
+  </div> -->
 </ion-content>
+
+
+
+
+
+
+
+
+
+

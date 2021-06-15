@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Detail User
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1>Detail User</h1>
+  <!-- {{user.email}} -->
+  <p>Email:{{user.email}}</p>
+  <p>Name:{{user.name}}</p>
+  <p>Department:{{user.department}}</p>
+
+<!-- 
+  <ion-button color="success" (click)="encodedText()">
+    Create QR
+  </ion-button> -->
+
+  <ion-grid>
+    <ion-row class="ion-align-self-center">
+      <ion-col size="12">
+        <ion-button (click)="takePhoto(1)" expand="full">Take Photo</ion-button>
+        <p>*please upload low resolution photo</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div *ngIf="base64Image">
+    <img [src]="base64Image">
+    <ion-button (click)="upload()" expand="full">Upload!</ion-button>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
